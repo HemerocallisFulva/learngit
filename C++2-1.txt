@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+	int m=0,n=0,sum,mini,maxi;
+	cin>>n;
+	cin>>m;
+	sum=m,mini=m,maxi=m;
+	for(int num=2;num<=n;num++){
+		cin>>m;
+		sum+=m;
+		mini=(m<mini?m:mini);
+		maxi=(m>maxi?m:maxi);
+		
+	}
+	cout<<sum<<" "<<mini<<" "<<maxi;
+
+
+	return 0;
+}
